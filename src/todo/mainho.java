@@ -1,43 +1,38 @@
-package group_assignmentJava;
+package todo;
 
-public class StudentClass {
+public class mainho extends Marks {
+
     private String name;
     private int roll;
+    // private int age;
     private int grade;
     private int sci;
     private int maths;
-    private int eng;
-    private int nep;
-    private int sos;
+    private int m1;
+    private int m2;
     private int total;
     private String school;
-    private String dob;
-    private char gen;
 
-
-    public StudentClass() {
+    public mainho() {
 
     }
 
-    public StudentClass(String name, int roll, int grade, int sci, int maths, int eng, int nep, int sos, int total, String school, String dob, char gen) {
+    public mainho(String name, int roll, int grade, int sci, int maths, int m1, int m2, int total, String school) {
         this.name = name;
         this.roll = roll;
+        // this.age = age;
         this.grade = grade;
         this.sci = sci;
         this.maths = maths;
-        this.eng = eng;
-        this.nep = nep;
-        this.sos = sos;
+        this.m1 = m1;
+        this.m2 = m2;
         this.total= total;
         this.school=school;
-        this.dob=dob;
-        this.gen=gen;
 
     }
     public String getSchool() {
         return school;
     }
-
     public void setSchool(String school){
         this.school=school;
     }
@@ -55,16 +50,6 @@ public class StudentClass {
         return sci;
     }
 
-    public String getDob() {
-        return dob;
-    }
-public char getGen() {
-        return gen;
-    }
-    public int getSos() {
-        return sos;
-    }
-
     public int getMaths() {
         return maths;
     }
@@ -73,12 +58,12 @@ public char getGen() {
         return grade;
     }
 
-    public int getEng() {
-        return eng;
+    public int getM1() {
+        return m1;
     }
 
-    public int getNep() {
-        return nep;
+    public int getM2() {
+        return m2;
     }
 
     public int getTotal() {
@@ -103,18 +88,15 @@ public char getGen() {
     public void setRoll(int roll) {
         this.roll = roll;
 
-    } public void setSos(int sos) {
-        this.sos = sos;
+    }
+
+    public void setM1(int m1) {
+        this.m1 = m1;
 
     }
 
-    public void setEng(int eng) {
-        this.eng = eng;
-
-    }
-
-    public void setNep(int nep) {
-        this.nep = nep;
+    public void setM2(int m2) {
+        this.m2 = m2;
 
     }
 
@@ -128,15 +110,16 @@ public char getGen() {
         this.total = total;
 
 
-    }public void setDob(String dob) {
-        this.dob = dob;
-
-
-    }public void setGen(char gen) {
-        this.gen = gen;
-
-
     }
 
 
+    @Override
+    public int sum() {
+        return m1+m2+maths+sci;
+    }
 }
+
+
+
+
+
