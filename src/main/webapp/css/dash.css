@@ -1,0 +1,36 @@
+@charset "UTF-8";
+	/* buttons styling */
+	.btns {
+		margin: 20px 5px;
+		padding: 15px 25px;
+		font-size: 24px;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		background-color: #6200EE;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+
+	.btns:hover {background-color: #3e8e41;}
+
+	.btns:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+
+
+
+
+	@-webkit-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+	@keyframes fade{
+		from {opacity: .4}
+		to {opacity: 1}
+	}
